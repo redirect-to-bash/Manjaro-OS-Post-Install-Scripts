@@ -1,0 +1,10 @@
+extraction:
+  python:
+    prepare:
+      packages:
+        - g++-6
+    after_prepare:
+      - mkdir -p $LGTM_WORKSPACE/test_folders
+      - cd $LGTM_WORKSPACE/test_folders
+      - touch a.txt b.txt c.txt
+      - ls
